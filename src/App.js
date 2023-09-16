@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Caraousel from "./components/Caraousel";
+import Grids from "./components/Grids";
+import Navbar from "./components/Navbar";
+// import logo from "./logo.png";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Caraousel />
+      <h2 style={{marginTop:'5rem', fontSize:'3rem' , marginLeft:'5rem'}}>Models</h2>
+      <Grids />
+      <h2 style={{marginTop:'5rem', fontSize:'3rem' , marginLeft:'5rem'}}>Find a Porsche near you</h2>
+    </>
   );
 }
 
