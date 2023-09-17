@@ -1,10 +1,10 @@
 import React from "react";
 import explogo from "../export.png";
-import ra from '../ra.png'
+import ra from "../ra.png";
 
 export default function Grids() {
   return (
-    <>
+    <div>
       <div
         className="row row-cols-1 row-cols-md-3 g-4"
         style={{ marginRight: "0", marginTop: "4rem ", marginLeft: "2px" }}
@@ -16,11 +16,11 @@ export default function Grids() {
               className="card-img-top"
               alt="..."
             />
-            <div class="card-img-overlay">
-              <h5 class="card-title">
+            <div className="card-img-overlay">
+              <h5 className="card-title">
                 <b>718</b>
               </h5>
-              <p class="card-text">
+              <p className="card-text">
                 from <b>INR 14,772,000</b>
               </p>
               <div className="bottom">
@@ -36,7 +36,9 @@ export default function Grids() {
                   />
                   Build your Own
                 </button>
-                <button className="btn btn-light tsp"><img src={ra} alt="" /> All models</button>
+                <button className="btn btn-light tsp">
+                  <img src={ra} alt="" /> All models
+                </button>
               </div>
             </div>
           </div>
@@ -48,9 +50,9 @@ export default function Grids() {
               className="card-img-top"
               alt="..."
             />
-            <div class="card-img-overlay">
-              <h5 class="card-title">911</h5>
-              <p class="card-text">
+            <div className="card-img-overlay">
+              <h5 className="card-title">911</h5>
+              <p className="card-text">
                 from <b>INR 14,772,000</b>
               </p>
               <div className="bottom">
@@ -66,7 +68,9 @@ export default function Grids() {
                   />
                   Build your Own
                 </button>
-                <button className="btn btn-light tsp"><img src={ra} alt="" /> All models</button>
+                <button className="btn btn-light tsp">
+                  <img src={ra} alt="" /> All models
+                </button>
               </div>
             </div>
           </div>
@@ -78,9 +82,9 @@ export default function Grids() {
               className="card-img-top"
               alt="..."
             />
-            <div class="card-img-overlay">
-              <h5 class="card-title">Taycan</h5>
-              <p class="card-text">
+            <div className="card-img-overlay">
+              <h5 className="card-title">Taycan</h5>
+              <p className="card-text">
                 from <b>INR 14,772,000</b>
               </p>
               <div className="bottom">
@@ -96,7 +100,9 @@ export default function Grids() {
                   />
                   Build your Own
                 </button>
-                <button className="btn btn-light tsp"><img src={ra} alt="" /> All models</button>
+                <button className="btn btn-light tsp">
+                  <img src={ra} alt="" /> All models
+                </button>
               </div>
             </div>
           </div>
@@ -108,9 +114,9 @@ export default function Grids() {
               className="card-img-top"
               alt="..."
             />
-            <div class="card-img-overlay">
-              <h5 class="card-title">Panamera</h5>
-              <p class="card-text">
+            <div className="card-img-overlay">
+              <h5 className="card-title">Panamera</h5>
+              <p className="card-text">
                 from <b>INR 14,772,000</b>
               </p>
               <div className="bottom">
@@ -126,7 +132,9 @@ export default function Grids() {
                   />
                   Build your Own
                 </button>
-                <button className="btn btn-light tsp"><img src={ra} alt="" /> All models</button>
+                <button className="btn btn-light tsp">
+                  <img src={ra} alt="" /> All models
+                </button>
               </div>
             </div>
           </div>
@@ -138,9 +146,9 @@ export default function Grids() {
               className="card-img-top"
               alt="..."
             />
-            <div class="card-img-overlay">
-              <h5 class="card-title">Macan</h5>
-              <p class="card-text">
+            <div className="card-img-overlay">
+              <h5 className="card-title">Macan</h5>
+              <p className="card-text">
                 from <b>INR 14,772,000</b>
               </p>
               <div className="bottom">
@@ -156,7 +164,9 @@ export default function Grids() {
                   />
                   Build your Own
                 </button>
-                <button className="btn btn-light tsp"><img src={ra} alt="" /> All models</button>
+                <button className="btn btn-light tsp">
+                  <img src={ra} alt="" /> All models
+                </button>
               </div>
             </div>
           </div>
@@ -168,9 +178,9 @@ export default function Grids() {
               className="card-img-top"
               alt="..."
             />
-            <div class="card-img-overlay">
-              <h5 class="card-title">Cayenne</h5>
-              <p class="card-text">
+            <div className="card-img-overlay">
+              <h5 className="card-title">Cayenne</h5>
+              <p className="card-text">
                 from <b>INR 14,772,000</b>
               </p>
               <div className="bottom">
@@ -186,7 +196,9 @@ export default function Grids() {
                   />
                   Build your Own
                 </button>
-                <button className="btn btn-light tsp"><img src={ra} alt="" /> All models</button>
+                <button className="btn btn-light tsp">
+                  <img src={ra} alt="" /> All models
+                </button>
               </div>
             </div>
           </div>
@@ -197,6 +209,6 @@ export default function Grids() {
         * European specifications shown below. Market specific values to be
         confirmed upon homologation.
       </p>
-    </>
+    </div>
   );
 }

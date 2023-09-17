@@ -2,7 +2,30 @@
 * {
   padding: 0;
   margin: 0;
+  transition: 0.15s all ease-in;
 }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #ff0000 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ff0000;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+  }
 
 .logo > a {
   margin-top: -71px;
@@ -23,6 +46,7 @@
   z-index: 12;
   margin-left: 1.7rem;
   margin-top: 11px;
+  transition: transform 0.5s ease-in-out;
 }
 .line {
   fill: none;
@@ -74,6 +98,9 @@ span {
 }
 .carousel-caption {
   margin-left: -8rem;
+}
+.carousel-caption:hover {
+  color: red;
 }
 
 .carousel-control-next-icon {
@@ -141,3 +168,118 @@ span {
   padding-bottom: 4px;
   filter: invert(1);
 }
+
+button > a > img {
+  width: 17px;
+  float: right;
+  padding-top: 9px;
+  margin-right: 1.5rem;
+}
+
+button > a {
+  text-decoration: none;
+  color: black;
+}
+button > a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.txt {
+  display: flex;
+  flex-direction: column;
+  padding-top: 6rem;
+  background-color: white;
+}
+
+.sidebar {
+  width: 54vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 47.1rem;
+  display: none;
+  justify-content: space-between;
+}
+
+.txt > button {
+  width: 300px;
+  text-align: left;
+  height: 3.3rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  border-radius: 10px;
+  padding-left: 15px;
+  border: none;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  font-size: 1.4rem;
+  user-select: none;
+}
+
+.txt > button:hover {
+  background-color: rgba(148, 149, 152, 0.18);
+}
+
+.images {
+  background-color: #eeeff2;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.images > img {
+  width: 196px;
+}
+
+.activ {
+  background-color: rgba(148, 149, 152, 0.18);
+  color: red;
+}
+#active {
+  background-color: rgba(148, 149, 152, 0.18);
+}
+
+.menu {
+  /* Your existing styles for the menu */
+
+  /* Add transition properties */
+  transition: all 0.7s ease-in;
+}
+
+.sidebar {
+  /* Your existing styles for the sidebar */
+
+  /* Add transition properties */
+  transition: all 0.7s ease-in;
+  transform: translateX(-120%); /* Start the sidebar off-screen */
+  backdrop-filter: blur(8px);
+  width: 100vw;
+  justify-content: flex-start;
+}
+
+/* When the menu is opened, translate it off-screen to the left */
+.menu.opened {
+  transform: translateX(-220%);
+}
+
+/* When the sidebar is visible, bring it on-screen */
+.sidebar.visible {
+  transform: translateX(0%);
+  transition: all 0.7s ease-in;
+}
+
+.btn-close {
+  margin-left: 2rem;
+  margin-top: 1rem;
+  border: 2px solid grey;
+  padding: 2px;
+  height: 3rem;
+  width: 3em;
+}
+
+/* .blur{
+  filter: blur(6);
+} */
