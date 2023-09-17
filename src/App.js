@@ -16,13 +16,21 @@ function App() {
       <BrowserRouter>
         <Navbar toggleHide={toggleHide} hidden={hidden} />
         <Caraousel />
-        {!hidden &&<h2 style={{ marginTop: "5rem", fontSize: "3rem", marginLeft: "5rem" }}>
-          Models
-        </h2>}
-        {!hidden && <Grids toggleHide={toggleHide} hidden={hidden}  />}
-        {!hidden &&<h2 style={{ marginTop: "5rem", fontSize: "3rem", marginLeft: "5rem" }}>
-          Find a Porsche near you
-        </h2>}
+        {!hidden && (
+          <h2
+            style={{ marginTop: "5rem", fontSize: "3rem", marginLeft: "5rem" }}
+          >
+            Models
+          </h2>
+        )}
+        {!hidden && <Grids toggleHide={toggleHide} hidden={hidden} />}
+        {!hidden && (
+          <h2
+            style={{ marginTop: "5rem", fontSize: "3rem", marginLeft: "5rem" }}
+          >
+            Find a Porsche near you
+          </h2>
+        )}
       </BrowserRouter>
     </>
   );

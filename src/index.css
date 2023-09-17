@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   transition: 0.15s all ease-in;
+  user-select: none;
 }
 
 /* ===== Scrollbar CSS ===== */
@@ -283,3 +284,5 @@ button > a:hover {
 /* .blur{
   filter: blur(6);
 } */
+
+
